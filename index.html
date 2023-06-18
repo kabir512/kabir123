@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Daily routine shedule</title>
-    <link rel="stylesheet" href="index.css">
-    <h2 align="center">(MY DAILY ROUTINE SHEDULE)</h2>
-    <table cellpadding="16" cellspacing="20" width="800" height="400" align="center" >
-        <tr>
-            <th>TIME</th>
-            <th>ACTIVITY</th>
-            <th>NOTES</th>
-        </tr>
-        <tr>
-            <td align="center"><b> 6:00am - 7:30am</b></td>        
-            <td align="center"><b> Wake up</td>
-            <td align="center"><b> Brush teeth and eat breakfast with family.</td>
-        </tr>
-        <tr>
-            <td align="center"><b> 8:00am - 12:00am</td>
-            <td align="center"><b> Classes</td>
-            <td align="center"><b> Saylani web and mobile app development calsses.</td>
-        </tr>  
-        <tr>
-            <td align="center"><b> 12:00am - 1:00pm</td>
-            <td align="center"><b> Lunch</td>
-            <td align="center"><b> Take a bath and eat lunch.</td>
-        </tr>
-        <tr>
-            <td align="center"><b> 1:00pm - 6:30pm</td>
-            <td align="center"><b> Part time job</td>
-            <td align="center"><b> Part time job in company.</td>
-        </tr>
-        <tr>
-            <td align="center"><b> 7:00pm - 8:30pm</td>
-            <td align="center"><b> Coaching classes</td>
-            <td align="center"><b> Coaching classes for 12th class.</td>
-        </tr>
-        <tr>
-            <td align="center"><b> 8:30pm - 9:30pm</td>
-            <td align="center"><b> Dinner</td>
-            <td align="center"><b> Eat dinner with family.</td>
-        </tr>
-        <tr>
-            <td align="center"><b> 10:00pm</td>
-            <td align="center"><b> Settle down</td>
-            <td align="center"><b> Get into sleep.</td>
-        </tr>
-</head>  
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
 <body>
-    
+<h1 align="center"><fieldset>Student Registration Form</fieldset></h1>
+<form action="congrats.html">
+    <form>
+          <label>
+            <b>Name :</b>
+            <input type="text" placeholder="Enter full name" name="Name" required="required" size="30"/>  
+  <br>
+  <br>      
+            <b>Father Name :</b>
+            <input type="text" name="Father Name" size="30"/>
+  <br>
+  <br>   
+            <b>Mother Name :</b>
+            <input type="text" name="Name" size="30"/>
+  <br>
+  <br>   
+            <b>Phone Number :</b>
+            <input type="text" placeholder="0341*******" name="Name" size="30" maxlength="11"/>
+  <br>
+  <br>   
+            <b>Email :</b>
+            <input type="text" placeholder="Sample@example.com" name="Email" required="required" size="30"/>
+  <br>
+  <br>    
+            <b>Gender :</b>
+            <input type="radio" name="Gender" value="Male"/>Male  
+            <input type="radio" name="Gender" value="Female"/>Female  
+            <input type="radio" name="Gender" value="Other"/>Other
+  <br>
+  <br>
+             <b>Date Of Birth :</b>
+             <input type="date" name="Date Of Birth" size="30"/>
+  <br>
+  <br>
+            <b>Address :</b>
+            <input type="text" placeholder="Street:- House:- Road:-" name="Address" required="required" size="60" maxlength="100"/>
+  <br>
+  <br>
+             <b>Blood Group :</b>
+             <select name="Blood Group">
+              <option value="A+">A +</option>
+              <option value="A-">A -</option>
+              <option value="B+">B +</option>
+              <option value="B-">B -</option>
+              <option value="O+">O +</option>
+              <option value="O-">O -</option>
+              <option value="AB+">AB +</option>
+              <option value="AB-">AB -</option>
+              </select>
+  <br>
+  <br>
+             <b>Department :</b>
+             <input type="radio" name="Department" value="CSE"/>SCE  
+             <input type="radio" name="Department" value="EEE"/>EEE  
+             <input type="radio" name="Department" value="BBA"/>BBA
+  <br>
+  <br>
+            <b>Course :</b>
+            <input type="checkbox" name="Course" value="C"/>C
+            <input type="checkbox" name="Course" value="C++"/>C++
+            <input type="checkbox" name="Course" value="Java"/>Java
+            <input type="checkbox" name="Course" value="AI"/>AI
+            <input type="checkbox" name="Course" value="Machine learning"/>Machine learning
+            <input type="checkbox" name="Course" value="Robotics"/>Robotics
+  <br>
+  <br>  
+          <b>Photo :</b>
+          <input type="file" name="Photo"/>
+  <br>
+  <br>   
+          <input type="reset" value="reset"/>
+          <input type="submit" value="Submit"/>
+    </Form>
 </body>
 </html>
